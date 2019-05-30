@@ -3,23 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Sample</title>
-    <script src="js/lottie.min.js" type="text/javascript">
-    const anim = lottie.loadAnimation({
-	container: document.getElementById('bodymovin-wrapper'),
-	renderer: 'svg',
-	loop: true,
-	autoplay: true,
-	path: 'data.json'
-});
-
-    </script>
-
+<script src="js/lottie.js" type="text/javascript"></script>
+<script>
+lottie.loadAnimation({
+  container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'data.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
+});</script>
     
 </head>
 
 <body>
 
- <div id="bodymovin-wrapper"></div>
+<div id="lottie"></div>
 
 </body>
 </html>
